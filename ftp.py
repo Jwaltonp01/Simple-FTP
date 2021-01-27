@@ -90,7 +90,7 @@ def ftp_download(address, username, password, target, dstpath):
 
 
 if __name__ == "__main__":
-    ACTIONS = {"upload": ['upload', 'UPLOAD', 'u'], "download": ['download', 'UPLOAD', 'u']}
+    ACTIONS = {"upload": ['upload', 'UPLOAD', 'u'], "download": ['download', 'DOWNLOAD', 'd']}
     args = argparse.ArgumentParser(description="Simple FTP Tool")
     args.add_argument('--action', '-n', choices=ACTIONS["upload"] + ACTIONS["download"],
                       type=str, metavar='', help="action to be performed")
